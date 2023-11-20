@@ -4,6 +4,20 @@
 python -m pip install flask requests celery redis
 ```
 
+# Start Redis server
+
+Because in our implementation Celery uses Redis as a message broker, we need to start a Redis server.
+
+### 1. Install Redis ( if not installed )
+
+please refer to https://redis.io/docs/install/install-redis/
+
+### 2. Start Redis server
+
+```shell
+redis-server
+```
+
 # Run server and a worker
 
 ### 1. Run server
